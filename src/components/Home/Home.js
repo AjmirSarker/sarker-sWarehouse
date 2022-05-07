@@ -1,8 +1,10 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import ProductSome from '../AllProducts/ProductSome';
 import One from '../bannerimage/one.jpg'
 import Three from '../bannerimage/three.jpg'
 import Two from '../bannerimage/two.jpg'
+import useData from '../Hooks/useData';
 import p1 from '../supplierimg/p1.jpg'
 import p2 from '../supplierimg/p2.jpg'
 import p3 from '../supplierimg/p3.jpg'
@@ -10,6 +12,7 @@ import p4 from '../supplierimg/p4.jpg'
 import "./Home.css"
 
 const Home = () => {
+  const [products] =useData()
     return (
         <div>
            <Carousel  className="Home">
@@ -105,6 +108,16 @@ const Home = () => {
 
 </div>
 </div>
+{/* Inventory */}
+<div className='container  mb-5 mt-3'>
+  <h2 className='fw-bolder text-center'>Items</h2>
+        <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {
+                products.slice(0,6).map(product=><ProductSome  product={product}></ProductSome>)
+            }
+       
+       </div>
+      </div>
         </div>
     );
 };

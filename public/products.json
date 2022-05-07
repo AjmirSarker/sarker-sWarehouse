@@ -1,0 +1,147 @@
+[
+  {
+  
+    "description": "FOGG is a product of Vini Cosmetics with a punch tagline of “without gas body spray” and “again finished”. It came with a basic USP of long lasting fragrance and guaranteeing 800 sprays for a single FOGG bottle.",
+    "image": "https://i.ibb.co/YjJ7rg9/bodyspray.jpg",
+    "name": "Body Spray",
+    "supplier": "Arafat",
+    "quantity": 600,
+    "price": 300
+  },
+  {
+ 
+    "description": "At Sarker's Bread, we celebrate fresh. Whether you’re picking up a scratch-baked loaf of bread for the family or a decadent treat for yourself, you can always be sure that the day you walk into our bakery is the day we baked it. ",
+    "image": "https://i.ibb.co/BPGZh4M/bread.jpg",
+    "name": "Bread",
+    "supplier": "Arafat",
+    "quantity": 400,
+    "price": 20
+  },
+  {
+  
+    "description": "Perfect gift for loved oncepremium chocolate gift boxPremium assorted chocolates collectionPacked safely and delivered all across BangladeshAll Chocolate With Decoration Box. ",
+    "image": "https://i.ibb.co/Mp2JNPj/chocolate.jpg",
+    "name": "Chocolate",
+    "supplier": "Arafat",
+    "quantity": 50,
+    "price": 150
+  },
+  {
+  
+    "description": "A harmonious and delicious blend inspired by our zest for life. A nod to our belief that balance is the key to contentment. Its pleasantly robust body is punctuated by a mildly acidic aftertaste. Each sip is an invitation to discover its subtle composition of surprising flavors and delicate finish",
+    "image": "https://i.ibb.co/bWjX95N/coffee.jpg",
+    "name": "Coffee",
+    "supplier": "Sarker",
+    "quantity": 45,
+    "price": 250
+  },
+  {
+  
+    "description": "Egg quality refers to whether an egg is chromosomally “normal” (euploid) or “abnormal” (aneuploid). ",
+    "image": "https://i.ibb.co/b6s4KX0/egg.jpg",
+    "name": "Egg",
+    "supplier": "Sarker",
+    "quantity": 200,
+    "price": 10
+  },
+  {
+  
+    "description": "Sunflower oil is rich in polyunsaturated fat and Vitamin E. Basically Sunflower oil is a good combination of monounsaturated and polyunsaturated fats with low saturated fat levels. ",
+    "image": "https://i.ibb.co/qJDXtVP/food-oil.png",
+    "name": "Food Oil",
+    "supplier": "Sarker",
+    "quantity": 60,
+    "price": 350
+  },
+  {
+ 
+    "description": "Honey is one of the healthiest substitutes of refined sugar with wholesome natural goodness. Dabur Honey is procured from the purest of sources from the forests of Sundarbans, Himalayas and other specified regions.",
+    "image": "https://i.ibb.co/P1N2RYk/honey.jpg",
+    "name": "Honey",
+    "supplier": "Ajmir",
+    "quantity": 120,
+    "price": 400
+  },
+  {
+   
+    "description": "Beat the heat with the refreshing Orange Tang. Enjoy its yummy taste with the benefits of Vitamin A, B & C and Iron. Rejuvenate your day by drinking a glass full of fresh and energetic drink- which gives you 60% of your Vitamin C requirement of the day. ",
+    "image": "https://i.ibb.co/PtHcqN5/item-2.png",
+    "name": "Tang",
+    "supplier": "Ajmir",
+    "quantity": 80,
+    "price": 250
+  },
+  {
+    
+    "description": "Drinking Aaram Orange juice prevents dehydration, by stopping excessive loss of sodium chloride and iron from the body. This juice promises to be of great quality.",
+    "image": "https://i.ibb.co/CQ6MHXB/juice.jpg",
+    "name": "Juice",
+    "supplier": "Ajjmir",
+    "quantity": 200,
+    "price": 120
+  },
+  {
+   
+    "description": "MAGGI offers tasty and healthy snacks option for Bangladeshi families Fortified with Vitamin A, Iron and Iodine. The tastemaker is comprised of known ingredients typically found in Bangladeshi households, such as turmeric, pepper, coriander, ginger and cardamom. ",
+    "image": "https://i.ibb.co/8s2wX7S/noodles.jpg",
+    "name": "Noodles",
+    "supplier": "Rahim",
+    "quantity": 320,
+    "price": 60
+  },
+  {
+   
+    "description": "Unilever is a Dutch-British transnational consumer goods company co-headquartered in Rotterdam, Netherlands and London, United Kingdom. Its products include food, beverages, cleaning agents and personal care products.  ",
+    "image": "https://i.ibb.co/3f7v3Vd/shampoo.jpg",
+    "name": "Shampoo",
+    "supplier": "Rahim",
+    "quantity": 200,
+    "price": 300
+  },
+  {
+   
+    "description": "Ispahani Mirzapore Best Leaf Tea (Jar) , with free spon, weight 350 gram , jar pack, Studies have found that some teas may help with cancer, heart disease, and diabetes; encourage weight loss; lower cholesterol; and bring about mental alertness. Tea also appears to have antimicrobial qualities ",
+    "image": "https://i.ibb.co/X4ZZ2zg/teapac.jpg",
+    "name": "Tea Pack",
+    "supplier": "Rahim",
+    "quantity": 450,
+    "price": 250
+  },
+  {
+   
+    "description": "Colgate Strong Teeth is India’s most trusted No. 1 Anti-Cavity toothpaste for the entire family. Its calci-lock protection locks calcium in teeth, protecting them from cavities. ",
+    "image": "https://i.ibb.co/QJ31qqV/toothpaste.jpg",
+    "name": "Tooth Paste",
+    "supplier": "Karim",
+    "quantity": 550,
+    "price": 85
+  },
+  {
+   
+    "description": "Sena Food & Beverage is a famous local brand who sells all Types of grocery Food in lower cost. Customers can find their desired unique products for a reasonable price within time. ",
+    "image": "https://i.ibb.co/ww8htSG/sugar.jpg",
+    "name": "Sugar",
+    "supplier": "Karim",
+    "quantity": 370,
+    "price": 150
+  },
+  {
+   
+    "description": "Our Pocket Tissue is available in the whole of Bangladesh. Planet Pocket Tissue has fine absorbency and absolute tear resistance with standard Perfume. Daraz delivers our product hassle free manner within the stipulated time period. ",
+    "image": "https://i.ibb.co/SrFtntk/tissuuee.jpg",
+    "name": "Tissue",
+    "supplier": "Marc",
+    "quantity": 340,
+    "price": 65
+  },
+  {
+    
+    "description": "Salt is essential for life in general, and saltiness is one of the basic human tastes. Salt is one of the oldest and most ubiquitous food seasonings, and salting is an important method of food preservation.",
+    "image": "https://i.ibb.co/BZtksyN/salt.jpg",
+    "name": "Salt",
+    "supplier": "Marc",
+    "quantity": 380,
+    "price": 80
+  }
+]
+
