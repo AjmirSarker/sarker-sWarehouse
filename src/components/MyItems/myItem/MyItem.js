@@ -1,9 +1,9 @@
 import React from 'react';
-import useData from '../Hooks/useData';
+import useData from '../../Hooks/useData';
 
-const ProductTable = ({ product }) => {
+const MyItem = ({ sendMyItem }) => {
   const [products, setProducts] = useData();
-  const productDelete = (id) => {
+  const sendMyItemDelete = (id) => {
     const procceed = window.confirm('Are you sure to delete this item???');
     if (procceed) {
       const url = `https://sarkerswarehouse.herokuapp.com/products/${id}`;
@@ -22,15 +22,16 @@ const ProductTable = ({ product }) => {
       console.log('ok');
     }
   };
+
   return (
     <tr>
-      <td>{product.name}</td>
-      <td>{product.supplier}</td>
-      <td>{product.quantity}</td>
-      <td>{product.price}</td>
+      <td>{sendMyItem.name}</td>
+      <td>{sendMyItem.supplier}</td>
+      <td>{sendMyItem.quantity}</td>
+      <td>{sendMyItem.price}</td>
       <td>
         <button
-          onClick={() => productDelete(product._id)}
+          onClick={() => sendMyItemDelete(sendMyItem._id)}
           type="button"
           class="btn btn-danger"
         >
@@ -41,4 +42,5 @@ const ProductTable = ({ product }) => {
   );
 };
 
-export default ProductTable;
+export default MyItem;
+// ৳

@@ -1,0 +1,61 @@
+.eidOffer {
+  background-color: #a19d8565;
+}
+
+.eidOffer p,
+.fourth-section p {
+  color: black !important;
+}
+.item {
+}
+
+.eidOffer li {
+  font-size: 1rem;
+  color: black;
+  line-height: 32px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.eidOffer-image {
+  max-height: 550px;
+}
+.designed h2 {
+  font-size: 6em;
+  letter-spacing: 5px;
+  color: #0e3742;
+  text-decoration: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 0.7em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+.designed h3 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color: #0e3742;
+  text-decoration: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 0.7em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+@media only screen and (max-width: 1210px){
+  .designed h2{
+    font-size: 3.5em;
+  }
+}
+@media only screen and (max-width: 770px){
+  .designed h2{
+    font-size: 2.2em;
+  }
+}
+@media only screen and (max-width: 400px){
+  .designed h2{
+    font-size: 1em;
+  }
+}

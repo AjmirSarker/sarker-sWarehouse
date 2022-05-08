@@ -1,6 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ProductSome = ({product}) => {
+  const navigate = useNavigate()
+  const goUpdatePage =()=>{
+    navigate(`/inventory/${product._id}`)
+  }
     return (
         <div class="col">
         <div class="card h-100 border border-0 shadow ">
@@ -11,6 +16,9 @@ const ProductSome = ({product}) => {
             <p className='card-text'>Quantity : {product.quantity}</p>
             <p className='card-text'>Per Price : {product.price}</p>
           </div>
+          <div onClick={goUpdatePage}  className="card-footer border border-primary bg-success">
+        <button className="btn fw-bold fs-5 btn-outline-info">Update</button>
+      </div>
         </div>
       </div>
     );
