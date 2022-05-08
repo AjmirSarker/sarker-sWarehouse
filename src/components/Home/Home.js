@@ -7,6 +7,7 @@ import Three from '../bannerimage/three.jpg';
 import Two from '../bannerimage/two.jpg';
 import EidOffer from '../ExtraTwo/EidOffer';
 import useData from '../Hooks/useData';
+import PageTitle from '../PageTitle/PageTitle';
 import SPinner from '../Spinner/SPinner';
 import p1 from '../supplierimg/p1.jpg';
 import p2 from '../supplierimg/p2.jpg';
@@ -15,14 +16,14 @@ import p4 from '../supplierimg/p4.jpg';
 import './Home.css';
 
 const Home = () => {
-  const navigate = useNavigate()
-  const goUpdatePage =()=>{
-    navigate(`/allproducts`)
-  }
+  const navigate = useNavigate();
+  const goUpdatePage = () => {
+    navigate(`/allproducts`);
+  };
   const [products] = useData();
   return (
     <div>
-       
+      <PageTitle title="Home"></PageTitle>
       <Carousel className="Home">
         <Carousel.Item interval={1000}>
           <img className="d-block w-100" src={One} alt="First slide" />
@@ -60,7 +61,9 @@ const Home = () => {
       <div class="section mt pb-2 ">
         <div class="container  ">
           <div class="text-center ">
-            <h3 class="py-4 text-danger fst-italic fs-2 fw-bolder">Our Executive Team</h3>
+            <h3 class="py-4 text-danger fst-italic fs-2 fw-bolder">
+              Our Executive Team
+            </h3>
             <p class="pb-3 fst-italic fw-bold fs-5">
               A successful team is one where everyone’s unique skills and
               strengths help <br /> the team achieve a shared goal in the most
@@ -122,22 +125,28 @@ const Home = () => {
       </div>
       {/* //two */}
       <div>
-       <EidOffer></EidOffer>
+        <EidOffer></EidOffer>
       </div>
       {/* Inventory */}
       <div className="container  mb-5 mt-3">
-      {
-          products.length===0?(<SPinner></SPinner>):""
-        }
-        <h2 className="fw-bolder text-center fst-italic fs-1 my-5">Inventory Items</h2>
+        {products.length === 0 ? <SPinner></SPinner> : ''}
+        <h2 className="fw-bolder text-center fst-italic fs-1 my-5">
+          Inventory Items
+        </h2>
         <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           {products.slice(0, 6).map((product) => (
             <ProductSome product={product}></ProductSome>
           ))}
         </div>
       </div>
-      <div className='d-flex my-2 container justify-content-end'>
-        <button  onClick={goUpdatePage}  className="btn fw-bold fs-5 btn-outline-success ms-auto ">Manage Inventory</button></div>
+      <div className="d-flex my-2 container justify-content-end">
+        <button
+          onClick={goUpdatePage}
+          className="btn fw-bold fs-5 btn-outline-success ms-auto "
+        >
+          Manage Inventory
+        </button>
+      </div>
     </div>
   );
 };

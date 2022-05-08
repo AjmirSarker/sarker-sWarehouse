@@ -1,7 +1,9 @@
 import React from 'react';
+import PageTitle from '../PageTitle/PageTitle';
 
 const Blogs = () => {
     return (<section className='container'>
+      <PageTitle title="Blogs"></PageTitle>
        <div className='my-5'  > <h3>Difference between javascript and nodejs</h3>
        <table class="table table-borderless table-secondary">
   <thead>

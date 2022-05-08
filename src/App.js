@@ -40,6 +40,7 @@ function App() {
       <div className="sticky-footer">
         <Footer></Footer>
       </div>
+      <Toaster />
     </div>
   );
 }

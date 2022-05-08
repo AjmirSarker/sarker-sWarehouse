@@ -4,10 +4,12 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../Firebase.init.js';
+import PageTitle from '../PageTitle/PageTitle.js';
+import toast from 'react-hot-toast';
 
 const SignUp = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, {sendEmailVerification:true});
   const [showPass, setShowPass] = useState(false);
 
   const toggleNewPass = () => {
@@ -29,6 +31,8 @@ const SignUp = () => {
     console.log(email);
     if (password === confirmPassword) {
       await createUserWithEmailAndPassword(email, password);
+      toast.success(`Signup Success`,{id:'success'})
+      toast.success(`Verify email sent`,{id:'verify'})
     } else {
       alert("Password didn't match please try again");
     }
@@ -38,6 +42,7 @@ const SignUp = () => {
   }
   return (
     <div>
+       <PageTitle title="SignUp"></PageTitle>
       <div className="row container w-75 mx-auto my-3">
         <div className="col-12 col-md-8 mx-auto">
           <div className="w-100">

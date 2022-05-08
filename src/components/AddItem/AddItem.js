@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 
 import { useForm } from 'react-hook-form';
 import auth from '../Firebase.init';
+import PageTitle from '../PageTitle/PageTitle';
 
 const AddItem = () => {
   const [user] = useAuthState(auth);
@@ -28,6 +29,7 @@ const AddItem = () => {
 
   return (
     <div className="w-50 my-5 mx-auto ">
+      <PageTitle title="Add Item"></PageTitle>
       <h1>Add New Item</h1>
       <form className="d-flex flex-column " onSubmit={handleSubmit(onSubmit)}>
         <div>
@@ -84,7 +86,7 @@ const AddItem = () => {
         />
         <div className="d-flex justify-content-center ">
           <input
-            className="my-2 w-25 fst-italic fs-5 fw-bolder   btn btn-outline-success"
+            className="my-2  fst-italic fs-5 fw-bolder   btn btn-outline-success"
             type="submit"
           />
         </div>

@@ -3,6 +3,7 @@ import useData from '../Hooks/useData';
 import ProductTable from './ProductTable';
 import { useNavigate } from 'react-router-dom';
 import SPinner from '../Spinner/SPinner';
+import PageTitle from '../PageTitle/PageTitle';
 
 
 const AllProducts = () => {
@@ -15,6 +16,7 @@ const AllProducts = () => {
     return (
       
       <div className=' container'>
+        <PageTitle title="Manage Inventory"></PageTitle>
         {
           products.length===0?(<SPinner></SPinner>):""
         }
@@ -24,7 +26,7 @@ const AllProducts = () => {
             
             <th scope="col">Name</th>
             <th scope="col">Supplier</th>
-            <th scope="col">Quantity</th>
+            
             <th scope="col">Price</th>
             <th scope="col">Change</th>
           </tr>
@@ -39,7 +41,7 @@ const AllProducts = () => {
         </tbody>
       </table>
       <div className='d-flex justify-content-end'>
-        <button  onClick={goUpdatePage}  className="btn fw-bold fs-5 btn-outline-success ms-auto ">Add Item page</button></div>
+        <button  onClick={goUpdatePage}  className="btn my-5 fw-bold fs-5 btn-outline-success ms-auto ">Add Item page</button></div>
     
       </div>
     );

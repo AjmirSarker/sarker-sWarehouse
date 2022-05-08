@@ -10,9 +10,13 @@ import GoogleButton from 'react-google-button';
 import toast from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../Firebase.init';
+import PageTitle from '../PageTitle/PageTitle';
 import SPinner from '../Spinner/SPinner';
 
 const Login = () => {
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
+ 
   const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
   const userEmail =useRef('')
   const navigate = useNavigate();
@@ -23,6 +27,9 @@ const Login = () => {
   if (user) {
     navigate('/');
   }
+  if (user|| googleUser) {
+    navigate(from, { replace: true });
+}
   if(loading){
     <SPinner></SPinner>
   }
@@ -42,11 +49,11 @@ if(email){
 
     await signInWithEmailAndPassword(email, password);
     const { data } = await axios.post('https://sarkerswarehouse.herokuapp.com/login', { email });
-    console.log(data);
-    console.log(email);
+   
   };
   return (
     <div>
+       <PageTitle title="Log In"></PageTitle>
       <div className="row  container mt-5 text-center w-75 mx-auto my-3">
         <div className="col-12  d-flex align-items-center">
           <div className="w-100">
@@ -79,7 +86,7 @@ if(email){
              
               <button
                 type="submit"
-                className="fst-italic fs-5 fw-bolder   btn btn-outline-success w-25"
+                className="fst-italic fs-5 fw-bolder   btn btn-outline-success "
               >
                 Login
               </button>

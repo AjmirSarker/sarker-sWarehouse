@@ -27,7 +27,7 @@ const MyItem = ({ sendMyItem }) => {
     <tr>
       <td>{sendMyItem.name}</td>
       <td>{sendMyItem.supplier}</td>
-      <td>{sendMyItem.quantity}</td>
+      
       <td>{sendMyItem.price}</td>
       <td>
         <button
