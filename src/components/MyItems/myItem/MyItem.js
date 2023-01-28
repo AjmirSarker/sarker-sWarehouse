@@ -6,7 +6,7 @@ const MyItem = ({ sendMyItem }) => {
   const sendMyItemDelete = (id) => {
     const procceed = window.confirm('Are you sure to delete this item???');
     if (procceed) {
-      const url = `https://sarkerswarehouse.herokuapp.com/products/${id}`;
+      const url = `https://sarkerwarehouse.onrender.com/products/${id}`;
       fetch(url, {
         method: 'DELETE'
       })
@@ -27,7 +27,7 @@ const MyItem = ({ sendMyItem }) => {
     <tr>
       <td>{sendMyItem.name}</td>
       <td>{sendMyItem.supplier}</td>
-      
+
       <td>{sendMyItem.price}</td>
       <td>
         <button

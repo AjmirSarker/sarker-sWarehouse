@@ -10,7 +10,7 @@ const Update = () => {
   const { id } = useParams();
   const [product, setProducts] = useState({});
   useEffect(() => {
-    const url = `https://sarkerswarehouse.herokuapp.com/products/${id}`;
+    const url = `https://sarkerwarehouse.onrender.com/products/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProducts(data));
@@ -29,7 +29,7 @@ const Update = () => {
       description: product.description,
       price: product.price
     };
-    const url = `https://sarkerswarehouse.herokuapp.com/products/${id}`;
+    const url = `https://sarkerwarehouse.onrender.com/products/${id}`;
     fetch(url, {
       method: 'PUT',
       headers: {
@@ -61,7 +61,7 @@ const Update = () => {
       description: product.description,
       price: product.price
     };
-    const url = `https://sarkerswarehouse.herokuapp.com/products/${id}`;
+    const url = `https://sarkerwarehouse.onrender.com/products/${id}`;
     fetch(url, {
       method: 'PUT',
       headers: {
@@ -81,7 +81,6 @@ const Update = () => {
 
   return (
     <div className="container mt-5">
-      
       <div className="row g-4">
         <div className="col-sm-12 col-md-6">
           <div class="card h-100 border border-0 shadow ">

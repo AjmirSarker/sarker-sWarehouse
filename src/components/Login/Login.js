@@ -15,10 +15,11 @@ import SPinner from '../Spinner/SPinner';
 
 const Login = () => {
   const location = useLocation();
-  let from = location.state?.from?.pathname || "/";
- 
-  const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
-  const userEmail =useRef('')
+  let from = location.state?.from?.pathname || '/';
+
+  const [signInWithGoogle, googleUser, googleLoading, googleError] =
+    useSignInWithGoogle(auth);
+  const userEmail = useRef('');
   const navigate = useNavigate();
   const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
   const [signInWithEmailAndPassword, loading, error] =
@@ -27,33 +28,34 @@ const Login = () => {
   if (user) {
     navigate('/');
   }
-  if (user|| googleUser) {
+  if (user || googleUser) {
     navigate(from, { replace: true });
-}
-  if(loading){
-    <SPinner></SPinner>
   }
-  const forgetPassword=async (e)=>{
-const email= userEmail.current.value
-if(email){
- await sendPasswordResetEmail(email)
-}
-
+  if (loading) {
+    <SPinner></SPinner>;
   }
+  const forgetPassword = async (e) => {
+    const email = userEmail.current.value;
+    if (email) {
+      await sendPasswordResetEmail(email);
+    }
+  };
 
   const handleLogin = async (e) => {
     e.preventDefault();
- 
-    const email = userEmail.current.value
+
+    const email = userEmail.current.value;
     const password = e.target.password.value;
 
     await signInWithEmailAndPassword(email, password);
-    const { data } = await axios.post('https://sarkerswarehouse.herokuapp.com/login', { email });
-   
+    const { data } = await axios.post(
+      'https://sarkerwarehouse.onrender.com/login',
+      { email }
+    );
   };
   return (
     <div>
-       <PageTitle title="Log In"></PageTitle>
+      <PageTitle title="Log In"></PageTitle>
       <div className="row  container mt-5 text-center w-75 mx-auto my-3">
         <div className="col-12  d-flex align-items-center">
           <div className="w-100">
@@ -67,7 +69,7 @@ if(email){
                 <input
                   required
                   type="email"
-                ref={userEmail}
+                  ref={userEmail}
                   className="form-control rounded-pill border border-warning"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
@@ -83,7 +85,7 @@ if(email){
                   id="exampleInputPassword1"
                 />
               </div>
-             
+
               <button
                 type="submit"
                 className="fst-italic fs-5 fw-bolder   btn btn-outline-success "
@@ -97,8 +99,14 @@ if(email){
                 </Link>
               </p>
             </form>
-            <div className='d-flex justify-content-center'>
-            <button onClick={forgetPassword} className="d-block btn btn-info mb-3">Forget your password ?</button></div>
+            <div className="d-flex justify-content-center">
+              <button
+                onClick={forgetPassword}
+                className="d-block btn btn-info mb-3"
+              >
+                Forget your password ?
+              </button>
+            </div>
             <h4 className="text-center fst-italic fw-bolder my-3">Or</h4>
             <GoogleButton
               className="w-50 mx-auto rounded-3 bg-dark"

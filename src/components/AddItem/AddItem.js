@@ -13,7 +13,7 @@ const AddItem = () => {
   const onSubmit = (data) => {
     setSubmit(true);
 
-    const url = 'https://sarkerswarehouse.herokuapp.com/products';
+    const url = 'https://sarkerwarehouse.onrender.com/products';
     fetch(url, {
       method: 'POST',
       headers: {
